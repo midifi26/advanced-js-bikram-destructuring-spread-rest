@@ -19,10 +19,8 @@ function correo(email){
 correo(emailLuis);
 
 //Ejecicio 3 - Dadas las variables a y b intercambia sus valores
-let a = 5;
-let b = 3;
-a=3;
-b=5;
+
+const { a = 5, b = 3 } = { a: 3, b: 5 };
 console.log(a);
 console.log(b);
 
@@ -33,8 +31,7 @@ const HIGH_TEMPERATURES = {
     today: 35,
     tomorrow: 32,
   };
-  const maximaHoy = HIGH_TEMPERATURES.today;
-  const maximaManana = HIGH_TEMPERATURES.tomorrow;
+  const { today: maximaHoy, tomorrow: maximaManana } = HIGH_TEMPERATURES;
   console.log(maximaHoy);
   console.log(maximaManana);  
 
